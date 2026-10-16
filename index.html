@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enchiladas Huastecas Tradicionales | Sabor Auténtico de Hidalgo</title>
+    
+    <!-- Meta etiquetas SEO (On-Page) -->
+    <meta name="description" content="Prueba las verdaderas Enchiladas Huastecas artesanales con cecina de res, cecina enchilada y chorizo regional en Huejutla de Reyes, Hidalgo. Pedidos en línea a domicilio.">
+    <meta name="keywords" content="Enchiladas Huastecas, Cecina de Rastro, Comida Huasteca, Huejutla de Reyes, Hidalgo, Antojitos Mexicanos, Restaurante Huasteco, Servicio a domicilio">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.enchiladashuastecas.com/">
+
+    <!-- Tailwind CSS desde CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Schema.org JSON-LD para SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Enchiladas Huastecas Tradicionales",
+      "image": ["https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=1200&q=80"],
+      "telephone": "+527710000000",
+      "priceRange": "$$",
+      "servesCuisine": ["Mexicana", "Huasteca"],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Huejutla de Reyes",
+        "addressRegion": "Hidalgo",
+        "addressCountry": "MX"
+      }
+    }
+    </script>
+</head>
+<body class="bg-amber-50/50 text-stone-800 antialiased">
+
+    <!-- NAVEGACIÓN Y BUSCADOR -->
+    <header class="sticky top-0 z-50 bg-stone-900/95 backdrop-blur-md text-white border-b border-stone-800 shadow-xl">
+        <div class="max-w-7xl mx-auto px-4 py-3.5 flex flex-col md:flex-row items-center justify-between gap-4">
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-amber-500 flex items-center justify-center text-stone-950 font-black text-xl shadow-lg shadow-amber-500/20">
+                    <i class="fa-solid fa-pepper-hot"></i>
+                </div>
+                <div>
+                    <span class="text-lg font-black text-white block leading-none">Enchiladas Huastecas</span>
+                    <span class="text-[10px] tracking-widest uppercase font-bold text-amber-500">Sabor Auténtico de Hidalgo</span>
+                </div>
+            </a>
+
+            <!-- BUSCADOR INTERNO EN TIEMPO REAL -->
+            <div class="relative w-full md:max-w-md">
+                <div class="relative flex items-center">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3.5 text-stone-400 text-sm"></i>
+                    <input type="text" id="global-search-input" placeholder="Buscar en la página: cecina, queso, salsas..." class="w-full bg-stone-800 text-amber-100 placeholder-stone-400 text-sm rounded-full pl-10 pr-10 py-2.5 border border-stone-700 focus:outline-none focus:border-amber-500 transition-all">
+                    <button id="clear-search-btn" class="hidden absolute right-3.5 text-stone-400 hover:text-amber-400">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </button>
+                </div>
+                <div id="search-results-dropdown" class="hidden absolute left-0 right-0 top-full mt-2 bg-stone-900 border border-stone-700 rounded-2xl shadow-2xl max-h-80 overflow-y-auto z-50 divide-y divide-stone-800"></div>
+            </div>
+
+            <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-stone-300">
+                <a href="#menu" class="hover:text-amber-400 transition-colors">Menú</a>
+                <a href="#calculadora" class="hover:text-amber-400 transition-colors">Calculadora</a>
+                <a href="#ubicacion" class="hover:text-amber-400 transition-colors">Ubicación</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative bg-stone-950 text-white overflow-hidden py-20 lg:py-28 border-b border-stone-800">
+        <div class="absolute inset-0 opacity-25 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=1600&q=80');"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/60 to-transparent"></div>
+        
+        <div class="relative max-w-5xl mx-auto px-4 text-center space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold uppercase tracking-wider">
+                <i class="fa-solid fa-utensils text-[10px]"></i> Tradición Gastronómica Regional
+            </div>
+            <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-white search-target">
+                Enchiladas Huastecas Tradicionales con Cecina de Res
+            </h1>
+            <p class="text-stone-300 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed search-target">
+                Tortillas recién elaboradas a mano, bañadas en salsa verde de tomate criollo o salsa roja de chile de árbol, servidas con fina cecina asada, queso fresco de rancho y frijoles refritos.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 pt-4">
+                <a href="#calculadora" class="bg-amber-500 hover:bg-amber-400 text-stone-950 font-extrabold px-8 py-4 rounded-xl shadow-lg shadow-amber-500/20 transition-all transform hover:-translate-y-0.5">
+                    Ordenar por WhatsApp <i class="fa-brands fa-whatsapp ml-2 text-lg"></i>
+                </a>
+                <a href="#menu" class="bg-stone-800 hover:bg-stone-700 text-stone-200 font-bold px-8 py-4 rounded-xl border border-stone-700 transition-all">
+                    Ver Menú
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENÚ -->
+    <section id="menu" class="max-w-7xl mx-auto px-4 py-20">
+        <div class="text-center max-w-2xl mx-auto space-y-3 mb-16">
+            <span class="text-xs font-black uppercase tracking-widest text-amber-600">Nuestras Especialidades</span>
+            <h2 class="text-3xl sm:text-4xl font-black text-stone-900 search-target">Platillos Tipicos de la Huasteca</h2>
+            <p class="text-stone-600 text-sm sm:text-base search-target">Ingredientes frescos y preparación al momento respetando la receta tradicional de Huejutla de Reyes.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Platillo 1 -->
+            <div class="bg-white rounded-3xl overflow-hidden border border-stone-200/80 shadow-sm hover:shadow-xl transition-all group flex flex-col justify-between">
+                <div>
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=600&q=80" alt="Enchiladas Huastecas con Cecina" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 right-4 bg-stone-950/80 backdrop-blur-md text-amber-400 font-black text-sm px-3 py-1 rounded-full border border-amber-500/30">$95 MXN</span>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <h3 class="text-xl font-bold text-stone-900 search-target">Orden Tradicional de Enchiladas</h3>
+                        <p class="text-stone-600 text-sm leading-relaxed search-target">5 enchiladas de tortillas suaves bañadas en salsa verde de tomate o salsa roja picante, queso fresco espolvoreado y bistec de cecina de res artesanal.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <a href="#calculadora" class="w-full block text-center bg-stone-100 hover:bg-amber-500 hover:text-stone-950 text-stone-800 font-bold py-2.5 rounded-xl transition-colors text-sm">
+                        Seleccionar Orden
+                    </a>
+                </div>
+            </div>
+
+            <!-- Platillo 2 -->
+            <div class="bg-white rounded-3xl overflow-hidden border border-stone-200/80 shadow-sm hover:shadow-xl transition-all group flex flex-col justify-between">
+                <div>
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?auto=format&fit=crop&w=600&q=80" alt="Enchiladas con Cecina Enchilada" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 right-4 bg-stone-950/80 backdrop-blur-md text-amber-400 font-black text-sm px-3 py-1 rounded-full border border-amber-500/30">$105 MXN</span>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <h3 class="text-xl font-bold text-stone-900 search-target">Enchiladas con Cecina Enchilada</h3>
+                        <p class="text-stone-600 text-sm leading-relaxed search-target">5 enchiladas acompañadas de cecina de cerdo marinada en adobo tradicional de chiles secos de la región, asada al carbón.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <a href="#calculadora" class="w-full block text-center bg-stone-100 hover:bg-amber-500 hover:text-stone-950 text-stone-800 font-bold py-2.5 rounded-xl transition-colors text-sm">
+                        Seleccionar Orden
+                    </a>
+                </div>
+            </div>
+
+            <!-- Platillo 3 -->
+            <div class="bg-white rounded-3xl overflow-hidden border border-stone-200/80 shadow-sm hover:shadow-xl transition-all group flex flex-col justify-between">
+                <div>
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?auto=format&fit=crop&w=600&q=80" alt="Paquete Familiar Huasteco" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 right-4 bg-stone-950/80 backdrop-blur-md text-amber-400 font-black text-sm px-3 py-1 rounded-full border border-amber-500/30">$320 MXN</span>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <h3 class="text-xl font-bold text-stone-900 search-target">Paquete Familiar Huasteco</h3>
+                        <p class="text-stone-600 text-sm leading-relaxed search-target">20 enchiladas mixtas (rojas y verdes), 500g de cecina de res y cecina enchilada, chorizo artesanal, frijoles refritos y refresco de 2 Litros.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <a href="#calculadora" class="w-full block text-center bg-stone-100 hover:bg-amber-500 hover:text-stone-950 text-stone-800 font-bold py-2.5 rounded-xl transition-colors text-sm">
+                        Seleccionar Orden
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALCULADORA -->
+    <section id="calculadora" class="bg-stone-950 text-white py-20 border-y border-stone-800">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="bg-stone-900/90 p-8 sm:p-12 rounded-3xl border border-stone-800 shadow-2xl space-y-8">
+                <div class="text-center space-y-2">
+                    <span class="text-xs font-black uppercase tracking-widest text-amber-500">Calculadora de Pedidos</span>
+                    <h2 class="text-3xl font-black text-white search-target">Cotiza y Envía tu Pedido al Instante</h2>
+                    <p class="text-stone-400 text-sm max-w-lg mx-auto search-target">Ingresa la cantidad de órdenes que deseas y envíalas directamente a nuestro WhatsApp para preparar tu pedido.</p>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between p-4 rounded-2xl bg-stone-950 border border-stone-800">
+                        <div>
+                            <p class="font-bold text-white text-base search-target">Orden Tradicional (Cecina)</p>
+                            <p class="text-xs text-amber-500 font-semibold">$95 MXN c/u</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <input type="number" id="qty-tradicional" min="0" value="0" class="w-20 bg-stone-900 border border-stone-700 text-amber-400 font-bold text-center py-2 rounded-xl focus:outline-none focus:border-amber-500">
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between p-4 rounded-2xl bg-stone-950 border border-stone-800">
+                        <div>
+                            <p class="font-bold text-white text-base search-target">Orden Cecina Enchilada</p>
+                            <p class="text-xs text-amber-500 font-semibold">$105 MXN c/u</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <input type="number" id="qty-enchilada" min="0" value="0" class="w-20 bg-stone-900 border border-stone-700 text-amber-400 font-bold text-center py-2 rounded-xl focus:outline-none focus:border-amber-500">
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between p-4 rounded-2xl bg-stone-950 border border-stone-800">
+                        <div>
+                            <p class="font-bold text-white text-base search-target">Paquete Familiar Huasteco</p>
+                            <p class="text-xs text-amber-500 font-semibold">$320 MXN c/u</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <input type="number" id="qty-familiar" min="0" value="0" class="w-20 bg-stone-900 border border-stone-700 text-amber-400 font-bold text-center py-2 rounded-xl focus:outline-none focus:border-amber-500">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-6 border-t border-stone-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div>
+                        <span class="text-xs text-stone-400 block font-semibold">Total Calculado:</span>
+                        <span id="total-price" class="text-3xl font-black text-amber-400">$0 MXN</span>
+                    </div>
+                    <button id="send-whatsapp-btn" class="w-full sm:w-auto bg-green-600 hover:bg-green-500 text-white font-extrabold px-8 py-4 rounded-xl transition-all flex items-center justify-center gap-3 shadow-lg shadow-green-600/20">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        <span>Confirmar Pedido por WhatsApp</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UBICACIÓN -->
+    <section id="ubicacion" class="max-w-7xl mx-auto px-4 py-20">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <span class="text-xs font-black uppercase tracking-widest text-amber-600">Ubicación y Entregas</span>
+                <h2 class="text-3xl font-black text-stone-900 search-target">Visítanos o Solicita tu Servicio a Domicilio</h2>
+                <p class="text-stone-600 text-sm leading-relaxed search-target">
+                    Ubicados en la zona centro de Huejutla de Reyes, Hidalgo. Contamos con entregas rápidas a domicilio dentro de la ciudad y áreas circunvecinas.
+                </p>
+                <div class="space-y-4 text-sm font-medium text-stone-700">
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-location-dot text-amber-600 text-lg mt-0.5"></i>
+                        <span class="search-target">Av. Juárez #105, Zona Centro, Huejutla de Reyes, Hidalgo, México.</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-clock text-amber-600 text-lg"></i>
+                        <span class="search-target">Lunes a Domingo: 8:00 AM - 6:00 PM</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-phone text-amber-600 text-lg"></i>
+                        <span class="search-target">Teléfono de Pedidos: (771) 000-0000</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-stone-900 p-8 rounded-3xl text-white space-y-4 border border-stone-800 shadow-xl">
+                <h3 class="text-xl font-bold text-amber-400 search-target">Horarios de Entrega</h3>
+                <p class="text-stone-300 text-sm search-target">Preparamos las salsas diariamente para garantizar la máxima frescura en tu mesa.</p>
+                <div class="p-4 bg-stone-950 rounded-2xl border border-stone-800 space-y-2 text-xs">
+                    <p class="text-stone-400 flex justify-between"><span class="search-target">Servicio de Comedor:</span> <strong class="text-amber-400">8:00 AM - 5:30 PM</strong></p>
+                    <p class="text-stone-400 flex justify-between"><span class="search-target">Pedidos por WhatsApp:</span> <strong class="text-amber-400">8:00 AM - 5:00 PM</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-stone-950 text-stone-400 py-10 px-4 border-t border-stone-900 text-center space-y-3">
+        <p class="text-amber-500 font-bold text-base search-target">Enchiladas Huastecas Tradicionales</p>
+        <p class="text-xs text-stone-500 search-target">Huejutla de Reyes, Hidalgo, México</p>
+        <p class="text-[11px] text-stone-600">© 2026 Empresa Ficticia de Enchiladas Huastecas. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
